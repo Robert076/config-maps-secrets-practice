@@ -7,7 +7,7 @@ Some of my notes while reading about **config maps** and **secrets** in Kubernet
 > endpoint for production is different from the one in development.
 >
 > There are two possibilities here:
-> The configuration and application code are not decoupled, and the MySQL is hardcoded and bundled within the application code: you are stuck and need to rebuild the whole app after editing the > > application code.
+> The configuration and application code are not decoupled, and the MySQL is hardcoded and bundled within the application code: you are stuck and need to rebuild the whole app after editing the application code.
 > 
 > The configuration and application code are decoupled. That’s good news for you as you can simply override the MySQL endpoint as you deploy to production.
 > 
