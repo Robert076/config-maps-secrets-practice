@@ -1,6 +1,7 @@
 # 🔐 config-maps-secrets-practice
 Some of my notes while reading about **config maps** and **secrets** in Kubernetes.
 
+### 🌎 Purpose of decoupling configuration from the application, hence the existence of ConfigMaps and Secrets (not my words, I took this paragraph from someone else):
 > " Consider the following problem:
 > 1. You deploy a Java application to the development environment for testing.
 > 2. After the tests, the app is ready for production, and you need to deploy it. However, the MySQL
