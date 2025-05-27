@@ -10,3 +10,4 @@ Some of my notes while reading about **config maps** and **secrets** in Kubernet
 >  
 > But if the app reads its config from the environment or a file, you can swap in the new database URL without touching the code.  
 
+❗️ The application code should be independent of the infrastructure it is running on.
