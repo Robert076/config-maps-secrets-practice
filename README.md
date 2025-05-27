@@ -40,3 +40,14 @@ kubectl create cm my-first-configmap
 # creates a key named "color" and its value is set to "blue"
 kubectl create cm my-second-configmap --from-literal=color=blue
 ```
+
+5. Creating a configmap from an env file:
+```bash
+kubectl create cm anotherconfigmap --from-env-file=my-env-file.txt
+```
+
+6. View the data inside the configmap:
+```bash
+# data in configmaps is not encrypted so use secrets for stuff you don't want public
+kubectl describe cm/anotherconfigmap
+```
