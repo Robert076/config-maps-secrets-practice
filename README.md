@@ -11,4 +11,4 @@ Some of my notes while reading about **config maps** and **secrets** in Kubernet
 > 
 > The configuration and application code are decoupled. That’s good news for you as you can simply override the MySQL endpoint as you deploy to production.
 > 
-> That’s the key to the concept of portability: the application code should be independent of the infrastructure it is running on. The best way to achieve this is to decouple the application code > from its configuration."
+> That’s the key to the concept of portability: the application code should be independent of the infrastructure it is running on. The best way to achieve this is to decouple the application code from its configuration."
