@@ -37,6 +37,6 @@ kubectl create cm my-first-configmap
 
 4. Creating a configmap from literal values imperatively:
 ```bash
-// creates a key named "color" and its value is set to "blue"
+# creates a key named "color" and its value is set to "blue"
 kubectl create cm my-second-configmap --from-literal=color=blue
 ```
