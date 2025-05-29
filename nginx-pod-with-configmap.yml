@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod-with-configmap
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+      env:
+        - name: COLOR # this is the name that it will have in our container
+          valueFrom:
+            configMapKeyRef:
+              name: my-third-configmap
+              key: color

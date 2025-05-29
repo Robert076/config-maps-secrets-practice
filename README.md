@@ -51,3 +51,13 @@ kubectl create cm anotherconfigmap --from-env-file=my-env-file.txt
 # data in configmaps is not encrypted so use secrets for stuff you don't want public
 kubectl describe cm/anotherconfigmap
 ```
+
+7. Launch a pod with an env variable taken from config map:
+```bash
+kubectl apply -f nginx-pod-with-configmap.yml
+```
+
+8. See that variable for yourself:
+```bash
+kubectl exec pods/nginx-pod-with-configmap -- env
+```
