@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod-with-entire-configmap
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+      envFrom: #envFrom instead of env
+        - configMapRef: #configMapRef not configMapKeyRef, probably better practice I might do this
+            name: my-third-configmap
