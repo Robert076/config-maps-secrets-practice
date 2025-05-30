@@ -61,3 +61,8 @@ kubectl apply -f nginx-pod-with-configmap.yml
 ```bash
 kubectl exec pods/nginx-pod-with-configmap -- env
 ```
+
+9. In the case of a configmap mounted as a volume:
+```bash
+kubectl exec pods/nginx-pod-cm -- ls /etc/conf
+```
