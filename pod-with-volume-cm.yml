@@ -6,7 +6,7 @@ spec:
   volumes:
     - name: configuration-volume
       configMap:
-        name: my-third-configmap
+        name: my-sixth-configmap
   containers:
     - name: nginx-container-with-configmap
       image: nginx:latest
