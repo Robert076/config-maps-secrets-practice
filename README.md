@@ -64,5 +64,9 @@ kubectl exec pods/nginx-pod-with-configmap -- env
 
 9. In the case of a configmap mounted as a volume:
 ```bash
+echo “I’m just a dummy config file” >> $HOME/configfile.txt
+
+kubectl create cm my-sixth-configmap --from-literal=color=yellow --from-file=$HOME/configfile.
+
 kubectl exec pods/nginx-pod-cm -- ls /etc/conf
 ```
