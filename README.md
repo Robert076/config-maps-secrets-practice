@@ -72,3 +72,8 @@ kubectl apply -f pod-with-volume-cm.yml
 
 kubectl exec pods/nginx-pod-cm -- ls /etc/conf
 ```
+
+10. Creating a secret imperatively:
+```bash
+kubectl create secret generic my-first-secret --from-literal='db_pass=my_db_pass'
+```
