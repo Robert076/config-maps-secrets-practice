@@ -87,3 +87,13 @@ kubectl create secret generic mypassword --from-file=./password.txt
 ```bash
 kubectl create -f nginx-pod-with-secret-env-var.yml
 ```
+
+13. Creating a pod with envFrom secret:
+```bash
+kubectl create -f nginx-secret-envfrom.yml
+```
+
+14. Seeing those env vars in person:
+```bash
+kubectl exec -it pod/nginx-secret-envfrom --container nginx-container -- /bin/bash
+```
