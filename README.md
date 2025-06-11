@@ -96,6 +96,8 @@ kubectl create -f nginx-secret-envfrom.yml
 14. Seeing those env vars in person:
 ```bash
 kubectl exec -it pod/nginx-secret-envfrom --container nginx-container -- /bin/bash
+
+env
 ```
 
 > Lastly, note that there is no clean and consistent way to modify a secret once it has been created through kubectl. <br>
