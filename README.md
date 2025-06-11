@@ -82,3 +82,8 @@ kubectl create secret generic my-first-secret --from-literal='db_pass=my_db_pass
 ```bash
 kubectl create secret generic mypassword --from-file=./password.txt
 ```
+
+12. Creating a pod using the secret from a file we just made:
+```bash
+kubectl create -f nginx-pod-with-secret-env-var.yml
+```
