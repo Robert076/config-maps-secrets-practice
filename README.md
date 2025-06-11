@@ -66,7 +66,7 @@ kubectl exec pods/nginx-pod-with-configmap -- env
 ```bash
 echo “I’m just a dummy config file” >> $HOME/configfile.txt
 
-kubectl create cm my-sixth-configmap --from-literal=color=yellow --from-file=$HOME/configfile.
+kubectl create cm my-sixth-configmap --from-literal=color=yellow --from-file=$HOME/configfile.txt
 
 kubectl apply -f pod-with-volume-cm.yml
 
